@@ -140,9 +140,9 @@ client.on('message', message => {
   .setAuthor('Kicked !', user.displayAvatarURL)
   .setColor("RANDOM")
   .setTimestamp()
-  .addField("User:",  `[ + ${user.tag} + ]`)
-  .addField("By:", `[  + ${message.author.tag} +  ]`)
-  .addField("Reason:", `[ + ${reason} +  ]`)
+  .addField("User:",  `[ ** ${user.tag} ** ]`)
+  .addField("By:", `[  ** ${message.author.tag} **  ]`)
+  .addField("Reason:", `[ ** ${reason} **  ]`)
   client.channels.get("505377220018307082").send({embed : banembed})
 }
 });
