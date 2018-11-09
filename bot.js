@@ -31,27 +31,31 @@ client.user.setGame(`#Future ..`,"http://twitch.tv/S-F")
 //////////////////////////////////////////////////////////////////////////
 
 client.on('message', message => {
-            if (message.content.startsWith(prefix + "help")) {
-     let embed = new Discord.RichEmbed()
-.setThumbnail(message.author.avatarURL)
-.addtitle(' PreFix = .')
-.addField('  Ban   ')
-.addField('  unban   ')
-.addField('  kick   ')
-.addField('  role   ')
-.addField('  say   ')
-.addField('  clear   ')
-.addField('  mc , Mute channal   ')
-.addField('  unmc , unMute Channal   ')
-.addField('  topinv   ') 
-.addField('  avatar   ') 
-.addField('  rep   ')
-.addField('  credit   ')
-.addField('  daily   ')
-.addField('  send   ')
-.addField('  giveaway   ')
-.setColor('#7d2dbe')
-  message.channel.sendEmbed(embed);
+    if (message.author.bot) return;
+     if (message.content === prefix + "help") {
+		 message.channel.send('**The Message Was Sent On Private**');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+.Ban 
+.unban
+.kick
+.say
+.clear
+.mc "mutechannal"
+.unmc "unmutechannal"
+.topinv
+.avatar
+.rep 
+.credit
+.daily
+.send
+.giveaway
+`);
+
     }
 });
 //////////////////////////////////////////////////////////////////////////
