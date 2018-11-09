@@ -34,20 +34,26 @@ client.on('message', message => {
             if (message.content.startsWith(prefix + "help")) {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
-.addField('     ')
-.addField('     ')
-.addField('     ') 
-.addField('     ') 
-.addField('     ')
-.addField('     ')
-.addField('     ')
-.addField('     ')
-.addField('     ')
+.addtitle(' PreFix = .')
+.addField('  Ban   ')
+.addField('  unban   ')
+.addField('  kick   ')
+.addField('  role   ')
+.addField('  say   ')
+.addField('  clear   ')
+.addField('  mc , Mute channal   ')
+.addField('  unmc , unMute Channal   ')
+.addField('  topinv   ') 
+.addField('  avatar   ') 
+.addField('  rep   ')
+.addField('  credit   ')
+.addField('  daily   ')
+.addField('  send   ')
+.addField('  giveaway   ')
 .setColor('#7d2dbe')
   message.channel.sendEmbed(embed);
     }
 });
-
 //////////////////////////////////////////////////////////////////////////
 client.on('message', message => {
   if (message.author.x5bz) return;
