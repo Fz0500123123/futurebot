@@ -525,7 +525,7 @@ client.on('message', function(message) {
             .setThumbnail(`${message.author.avatarURL}`)
             .setDescription(`\n\n\`\`\`${message.content}\`\`\``)
             .setFooter(`من (@${message.author.tag})  |  (${message.author.id})`)
-        client.channels.get("510507327804276738").send({ embed: stewart });
+        client.channels.get("513284669978968084").send({ embed: stewart });
     }
 });
 
